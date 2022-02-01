@@ -1,0 +1,130 @@
+@font-face
+{
+    font-family: Cardium_A_Regular;
+    src: url("Dateien/schriftarten/Cardium A Regular.otf");
+}
+
+body
+{
+    background-color: rgba(0, 0, 0, 0.9);
+    color:white;
+}
+
+input::placeholder
+{
+    color: grey;
+    text-align: center;
+}
+
+input
+{
+    all: unset;
+    transition: 0.3s;
+    font-family: Cardium_A_Regular;
+}
+
+input:not([type='submit']):hover
+{
+    font-size: 1.75em;
+}
+
+.flex-mid
+{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.form-align
+{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    flex-direction: column;
+}
+
+.form-submit-align
+{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+    opacity: 0;
+    animation-delay: 1s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-name: slide-nachrechts;
+}
+
+.input-design1
+{
+    font-size: 1.5em;
+    border: 1px grey solid;
+    border-radius: 0.2em;
+    text-align: center;
+
+    opacity: 0;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+
+    animation-name: slide-nachlinks;
+}
+
+.input-design2
+{
+    display: flex;
+    border-radius: 25px;
+    padding: 0.5em;
+    height: 1.2em;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.input-design2:hover
+{
+    font-size: 1.1em;
+    filter: brightness(120%);
+}
+
+#input-submit-design1
+{
+    background-color: rgba(30, 143, 255, 1);
+}
+
+#input-submit-design2
+{
+    background-color: rgb(223, 100, 28);
+}
+
+@keyframes slide-nachlinks
+{
+    from
+    {
+        opacity: 0;
+        margin-left: 10em;
+    }
+    to
+    {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+
+@keyframes slide-nachrechts
+{
+    from
+    {
+        opacity: 0;
+        margin-right: 10em;
+    }
+    to
+    {
+        opacity: 1;
+        margin-right: 0;
+    }
+}

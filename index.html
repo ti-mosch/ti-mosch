@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="flex-mid">
+        <form class="form-align" method="post" action="Dateien/php/anmelden.php">
+            <input class="input-design1" id="benutzer" name="benutzer" type="text" placeholder="benutzername" required/>
+            <input class="input-design1" id="pw" name="pw" type="password" placeholder="passwort" required/>                
+            <div class="form-submit-align">
+                <input class="input-design2" id="input-submit-design1" type="submit" value="anmelden"/>
+                <input class="input-design2" id="input-submit-design2" type="submit" formaction="Dateien/php/registrieren.php" value="registrieren"/>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
